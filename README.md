@@ -17,7 +17,7 @@ To understand the jargons used in Blazemeter, below are few useful links :-
 
 - Please refer to this article to understand the summary of your test report https://www.blazemeter.com/blog/understanding-your-reports-part-4-how-read-your-load-testing-reports-blazemeter
 
-Blazemeter reports client side errors as well in addition to the server side backend errors, and that impacts the overall performance report. It does not clearly log about the client side errors so it gets a bit difficult to guess whats going on underneath. Therefore when trying to test a specific feature we need to understand if we to download the embedded resources or not.
+
 
 ## Running tests
 
@@ -25,3 +25,22 @@ You will need a `BLAZEMETER_KEY_ID` + `BLAZEMETER_KEY_SECRET`
 
 Run:
 ```BLAZEMETER_KEY_ID=<BLAZEMETER_KEY_ID> BLAZEMETER_KEY_SECRET=<BLAZEMETER_KEY_SECRET> sh ./run-test.sh```
+
+## Interpreting the results
+
+Blazemeter reports client side errors as well as server side errors. This can impact overall performance report. 
+
+Blazemeter does not clearly log out the client side errors so it gets a bit difficult to guess whats going on underneath. 
+
+When trying to test a specific feature it is advised that you think about requiring embedded resources or not.
+
+
+## Considerations 
+
+- If you your application is not publicly available you will need to whitelist the blazemeter addresses. 
+
+- To test your application from multiple regions specify this in the executions json.
+
+- To add assertions to your scenarios review to this documentation [Pass/Fail](https://gettaurus.org/docs/PassFail/)
+
+- For high level interpretation of results refer to `./output/bzt.log` after you test has finished

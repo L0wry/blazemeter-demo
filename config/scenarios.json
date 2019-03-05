@@ -1,13 +1,6 @@
 {
   "scenarios":{
     "google":{
-      "data-sources":[
-        {
-          "path":"/path/data.csv",
-          "delimiter":",",
-          "loop":true
-        }
-      ],
       "requests":[
         {
           "url":"https://www.google.com",
