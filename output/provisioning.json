@@ -1,0 +1,10 @@
+{
+  "provisioning":"cloud",
+  "modules":{
+    "cloud":{
+      "token":"${BLAZEMETER_KEY_ID}:${BLAZEMETER_KEY_SECRET}",
+      "timeout":"7s",
+      "browser-open":"start"
+    }
+  }
+}
