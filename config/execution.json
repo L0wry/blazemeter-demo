@@ -7,7 +7,10 @@
       },
       "hold-for":"2m",
       "ramp-up":"0m",
-      "scenario":"google"
+      "scenario":"google",
+      "criteria": {
+        "average response time above 150ms": "avg-rt of Sample Label>150ms for 10s, stop as failed"
+      }
     }
   ]
 }
